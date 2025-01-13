@@ -6,8 +6,6 @@ header {
   left: 0;
   width: 100%;
   z-index: 3;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
 }
 
 header .container {
@@ -25,6 +23,7 @@ header .container {
 header .logo {
   width: 80px;
   display: block;
+  cursor: pointer;
 }
 
 .hamburger-menu {
@@ -50,6 +49,9 @@ header .cta-button {
 /* Mobile Styles */
 @media (max-width: 767px) {
 
+  header {
+    background-color: rgb(0, 0, 0) ;
+  }
   /* Display navbar when it’s added to the DOM for mobile */
 
   nav {
