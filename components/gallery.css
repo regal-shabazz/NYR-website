@@ -1,0 +1,84 @@
+.gallery {
+  background: rgb(226, 166, 88);
+}
+
+.gallery h2 {
+  margin-bottom: 2rem;
+}
+
+.gallery-content {
+  background-color: rgb(242, 187, 115);
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.535);
+}
+
+.gallery-row {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 200%; /* Wider than the screen for the animation */
+}
+
+.row-top {
+  top: 0;
+  animation: slide-right 20s linear infinite paused;
+  margin-block: 10px 10px;
+}
+
+.row-bottom {
+  bottom: 0;
+  animation: slide-left 20s linear infinite paused;
+  margin-block: 10px 10px;
+}
+
+.gallery-row img {
+  width: 350px; /* Adjust size as needed */
+  margin: 0 1rem;
+  transition: transform 0.3s;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px black;
+}
+
+.gallery-content:hover img {
+  transform: scale(1.1);
+}
+
+/* Button styling */
+.view-gallery-btn {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #d2b48c; /* burlywood */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.view-gallery-btn:hover {
+  background-color: #c19e7a;
+}
+
+/* Animations */
+@keyframes slide-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}

@@ -1,0 +1,18 @@
+/* Splash Screen Styles (for dynamic creation) */
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(244, 230, 212);
+  text-align: center;
+}
+
+.splash-screen h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.splash-screen p {
+  color: #555;
+}

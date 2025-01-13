@@ -1,0 +1,96 @@
+header {
+  background-color: rgba(0, 0, 0, 0.891);
+  box-shadow: 0 4px 20px 2px black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+header .logo {
+  width: 80px;
+  display: block;
+}
+
+.hamburger-menu {
+  color: burlywood;
+}
+
+header a {
+  color: burlywood;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: .8rem;
+}
+
+header .cta-button {
+  font-size: .9rem;
+}
+
+.navbar a:hover {
+  background-color: burlywood;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+
+  /* Display navbar when it’s added to the DOM for mobile */
+
+  nav {
+    padding-bottom: 2rem;
+    
+  }
+
+  .navbar.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Positioning below the header */
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 9;
+    
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+  }
+
+  /* Align menu items in a column */
+  .navbar ul li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  /* Make the hamburger icon larger */
+  .hamburger-menu i {
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  /* Optional: Adjust logo size for mobile */
+  header img {
+    width: 70px;
+  }
+}

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1224px;
+  margin-inline: auto;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h3 {
+ font-size: 1.5rem;  
+ text-align: center;
+ margin-bottom: 4rem;
+ font-weight: bold;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.cta-button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button.primary {
+  background-color: rgb(130, 83, 21); /* Example color */
+  color: white;
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgb(158, 109, 45);
+}
+
+section .container {
+  padding-block: 5rem;
+}
